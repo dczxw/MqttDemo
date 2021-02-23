@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SuperSm</string>
+    <string name="sub_name">请输入订阅主题</string>
+    <string name="send_name">请输入发送主题</string>
+    <string name="receive_msg">这里展示收到的消息</string>
+    <string name="send_msg">请输入发送的消息</string>
+    <string name="mqtt_test">MQ测试</string>
+</resources>
