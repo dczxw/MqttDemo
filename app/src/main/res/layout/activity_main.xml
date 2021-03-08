@@ -8,95 +8,25 @@
     android:padding="10dp"
     tools:context=".ui.MainActivity">
 
-    <TextView
-        android:id="@+id/tv_test"
+    <Button
+        android:onClick="onMQClick"
+        android:id="@+id/btn_MQtt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableLeft="@color/colorPrimary"
-        android:gravity="center_vertical"
-        android:text="订阅消息"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:text="测试MQTT消息" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/et_sub_topic"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:drawableBottom="@color/colorPrimaryDark"
-            android:hint="@string/sub_name" />
-
-        <Button
-            android:id="@+id/btn_sub"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="订阅"
-            tools:layout_editor_absoluteX="68dp"
-            tools:layout_editor_absoluteY="16dp" />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/tv_receive_msg"
+    <Button
+        android:onClick="onProviderClick"
+        android:id="@+id/btn_con"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/border"
-        android:gravity="left|top"
-        android:padding="5dp"
-        android:minHeight="80dp"
-        android:hint="@string/receive_msg" />
+        android:text="测试Provider进程通信" />
 
-
-    <TextView
+   <Button
+        android:onClick="onSurfaceClick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="5dp"
-        android:gravity="center_vertical"
-        android:text="发送消息"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <EditText
-        android:id="@+id/et_send_msg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/border"
-        android:gravity="left|top"
-        android:hint="@string/send_msg"
-        android:minHeight="80dp"
-        android:padding="5dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/et_send_topic"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:drawableBottom="@color/colorPrimaryDark"
-            android:hint="@string/send_name" />
-
-        <Button
-            android:id="@+id/btn_send"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="发送"
-            tools:layout_editor_absoluteX="68dp"
-            tools:layout_editor_absoluteY="16dp" />
-
-    </LinearLayout>
+        android:text="测试Surface" />
 
 
 </LinearLayout>
